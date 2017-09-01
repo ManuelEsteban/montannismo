@@ -48,7 +48,7 @@ var loadState = {
         game.load.spritesheet('fullscreen', '../assets/PantallaCompleta.png', 63, 63, 2);
         game.load.spritesheet('shadow', '../assets/shadow.png', 138, 15);
 
-        game.load.image('fondoMenu2', 'assets/fondos/Fondo menu3.jpg');
+        //game.load.image('fondoMenu2', 'assets/fondos/Fondo menu3.jpg');
         // MEJORAS
         game.load.image('mejoras', '../assets/fondos/mejoras.png');
         game.load.image('motor', '../assets/fondos/motor.png');
@@ -74,13 +74,15 @@ var loadState = {
         game.load.image('coche_orco', '../assets/coches/orco/coche.png');
         game.load.image('conductor_orco', '../assets/coches/orco/conductor.png');
         
-        // MONEDAS Y COMBUSTIBLE
+        // Elementos de juego
         game.load.spritesheet('moneda', '../assets/monedas.png', 64, 64, 12);
         game.load.spritesheet('combustible', '../assets/Combustible.png', 39, 44);
         game.load.spritesheet('fuelLow', '../assets/FuelLow.png', 320, 264);
         game.load.image('gasIcon', '../assets/GasIcon.png');
         game.load.image('coinIcon', '../assets/CoinIcon.png');
-        
+        game.load.image('pause', '../assets/pause.png');
+        game.load.image('menuPause', '../assets/fondos/menupausa.png');
+       
         //YOU WIN
         game.load.image('youWin', '../assets/fondos/youWin.png');
         

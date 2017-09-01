@@ -102,7 +102,7 @@ phaseSlider = function(game) {
                 this.locked = false;
                 this.slideIndex += 1;
 
-                if (_this.options.autoAnimate === false && this.slideIndex >= _this.options._objects.length - 1) {
+                if (_this.options.autoAnimate === false && this.slideIndex >= _this.options._objects.length - 20) {
                     if (_this.options._showHandles === true) {
                         this.sliderControlsGroup.children[0].alpha = 0;
                     }

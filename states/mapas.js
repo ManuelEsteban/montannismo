@@ -2,7 +2,7 @@ var mapasState = {
     
     create: function(){
         // Fondo
-        game.add.image(0, 0, 'fondoMenu2');
+        game.add.image(0, 0, 'fondoMenu');
         //game.stage.backgroundColor = 'rgba(250, 210, 99, 0.93)';
         
         // Título del juego y elementos
@@ -44,7 +44,8 @@ var mapasState = {
         char3.scale.setTo(0.5, 0.5);
         char3.x = 500/2 - char3.width/2;
         char3.y = 100;
-        
+
+
         /*var block1 = game.add.image(char1.x-88, char1.y-30,"yellow");
         block1.alpha = 0.9;
         var block2 = game.add.image(char2.x-88, char2.y-30,"yellow");
@@ -78,11 +79,14 @@ var mapasState = {
         });
         
         var btn = game.add.image((game.width/4+20), (game.height / 2 - 80 / 2)+180, "aceptar2");
+        var text = game.add.text(char1.x+430,char1.y+125,"Mapa seleccionado",{ font: '45px Arima Madurai bold', fill: '#ed8a05', align: 'center'});
+        var img = game.add.image(text.x+120, text.y+80, "l1");
+        img.scale.setTo(0.2, 0.2);
+
         btn.inputEnabled = true;
         btn.events.onInputDown.add(function (e, pointer) {
             var index = slider.getCurrentIndex();
-            var text = game.add.text(char1.x+430,char1.y+125,"Mapa seleccionado",{ font: '45px Arima Madurai bold', fill: '#ed8a05', align: 'center'});
-            var img = game.add.image(text.x+120, text.y+80, "l"+(index+1));
+            img = game.add.image(text.x+120, text.y+80, "l"+(index+1));
             img.scale.setTo(0.2, 0.2);
             game.global.map_id = index+1;
         },this); 
@@ -121,7 +125,7 @@ var mapasState = {
         leftKey.onDown.addOnce(this.back, this);
     },
     
-        /*
+    /*
      * FUNCIÓN PARA BOTONES DE MUTE/UNMUTE 
      * Activa o desactiva el sonido
      */

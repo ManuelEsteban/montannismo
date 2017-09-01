@@ -2,7 +2,7 @@ var personajeState = {
     
     create: function() {
         // Fondo
-        game.add.image(0, 0, 'fondoMenu2');
+        game.add.image(0, 0, 'fondoMenu');
         //game.stage.backgroundColor = 'rgba(250, 210, 99, 0.93)';
         
         // Título del juego y elementos
